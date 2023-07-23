@@ -10,19 +10,21 @@
 <body>
     <h1 class="logo">Gerador de Senha</h1>
 
-    <main class="container-input">
-        <span>Tamanho <span id="valor"></span> caracteres</span>
-        <input id="slider" class="slider" type="range" min="8" max="25" value="12">
-        
-        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
-    </main>
+    <div class="corpo">
 
-    <div id="container-password" onclick="copyPassword()" class="container-password hide">
-        <span class="title">Sua senha foi criada</span>
-        <span id="password" class="password">12345536</span>
-        <span class="tooltip">Clique na senha para copiar. 👆</span>
+        <main class="container-input">
+            <span style="color: rgb(0, 0, 0);">Tamanho <span id="valor" style="color: rgb(0, 0, 0);"></span> caracteres</span>
+            <input id="slider" class="slider" type="range" min="8" max="25" value="12">
+            
+            <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+        </main>
+
+        <div id="container-password" onclick="copyPassword()" class="container-password hide">
+            <span class="title" style="color: rgb(0, 0, 0);">Sua senha foi criada</span>
+            <span id="password" class="password"></span>
+            <span class="tooltip" style="color: rgb(255, 255, 255);">Clique na senha para copiar. 👆</span>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
